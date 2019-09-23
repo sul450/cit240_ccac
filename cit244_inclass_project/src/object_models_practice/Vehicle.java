@@ -9,7 +9,7 @@ package object_models_practice;
  *
  * @author sliu11
  */
-public abstract class Vehicle implements Turnable{
+public abstract class Vehicle implements Turnable, CrashTestable{
     
     String vin;
     String wheels;
