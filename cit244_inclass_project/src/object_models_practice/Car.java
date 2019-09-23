@@ -9,21 +9,27 @@ package object_models_practice;
  *
  * @author sliu11
  */
-public class VehicleLand {
-    public static void main(String[] args) {
-        
-        Vehicle v = new Vehicle() {
-        @Override
-        public void turn (int deg){
+public class Car extends Vehicle {
+    
+    private String bodyStyle;
+    private int currentGear;
+    private double totalMiles;
+    private int numOfDoors;
+    
+    public Car(int y, String mod, String m, String t, String bs){
+        year = y;
+        model = mod;
+        make = m;
+        trim = t;
+        bodyStyle = bs;
+  
+    } 
+    
+    @Override
+    public void turn (int deg){
         //placeholder implentation which just 
         //adds incoming degrees to current heading
         
         headingInDeg = headingInDeg + deg;
     }
-        };
-        Car firstCar = new Car(1991, "Acura", "NSX", "N/A", "Coupe");
-        
-        
-    }
-    
 }
