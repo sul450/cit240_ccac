@@ -5,6 +5,8 @@
  */
 package object_models_practice;
 
+import inheritancepractice.DrivingMode;
+
 /**
  *
  * @author sliu11
@@ -13,6 +15,7 @@ public class VehicleLand {
     public static void main(String[] args) {
         
         Vehicle v = new Vehicle() {
+            
         @Override
         public void turn (int deg){
         //placeholder implentation which just 
@@ -20,6 +23,13 @@ public class VehicleLand {
         
         headingInDeg = headingInDeg + deg;
     }
+        /* Determines the star rating. Should implement all methods from 
+        crashtestable by using ct.getVehicleWeight();
+        */
+        public double crash(CrashTestable){
+            
+            
+        }
 
             @Override
             public int getVehicleYear() {
@@ -37,12 +47,12 @@ public class VehicleLand {
             }
 
             @Override
-            public String getFrontBumperHeight() {
+            public double getFrontBumberHeight() {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
 
             @Override
-            public String frameMaterialIdentifier() {
+            public String frameMaterialIdentifer() {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
 
@@ -52,7 +62,7 @@ public class VehicleLand {
             }
 
             @Override
-            public double getlengthWheelBase() {
+            public double getLengthOfWheelBase() {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
 
@@ -62,17 +72,12 @@ public class VehicleLand {
             }
 
             @Override
-            public double getfrontWeightNonRaised() {
+            public double getFrontWeightWhenRaised() {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
 
-            @Override
-            public double getfrontWeightWhenRaised(int raiseAngle) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
         };
         Car firstCar = new Car(1991, "Acura", "NSX", "N/A", "Coupe");
-        
         
     }
     

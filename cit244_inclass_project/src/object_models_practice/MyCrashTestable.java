@@ -6,11 +6,11 @@
 package object_models_practice;
 
 /**
- * collaboratively designed interface for specifying behaviors that aloow an 
+ * collaboratively designed interface for specifying behaviors that allow an 
  * object to be 
  * @author sliu11
  */
-public interface CrashTestable {
+public interface MyCrashTestable {
     
     /**
      * release year 
@@ -21,13 +21,13 @@ public interface CrashTestable {
     /**
      * driving mode represents a grouping of settings related 
      * to the car's performance ex(eco, snow, sport);
-     * @return 
+     * @return an instance of the driving mode
      */
     public DrivingMode getDrivingMode();
     
     /**
-     * 
-     * @return 
+     * use pounds for unit
+     * @return gross weight in pounds
      */
     public double getVehicleWeight();
     

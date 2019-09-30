@@ -5,23 +5,22 @@
  */
 package object_models_practice;
 
+import inheritancepractice.DrivingMode;
+
 /**
  *
  * @author sliu11
  */
 public class Truck extends Vehicle{
-    
+
     @Override
-    public void turn (int deg){
-        //placeholder implentation which just 
-        //adds incoming degrees to current heading
-        
-        headingInDeg = headingInDeg + deg;
+    public void turn(int deg) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public int getVehicleYear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 2019;
     }
 
     @Override
@@ -31,16 +30,16 @@ public class Truck extends Vehicle{
 
     @Override
     public double getVehicleWeight() {
+        return 5680;
+    }
+
+    @Override
+    public double getFrontBumberHeight() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public String getFrontBumperHeight() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String frameMaterialIdentifier() {
+    public String frameMaterialIdentifer() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -50,7 +49,7 @@ public class Truck extends Vehicle{
     }
 
     @Override
-    public double getlengthWheelBase() {
+    public double getLengthOfWheelBase() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -60,12 +59,8 @@ public class Truck extends Vehicle{
     }
 
     @Override
-    public double getfrontWeightNonRaised() {
+    public double getFrontWeightWhenRaised() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    @Override
-    public double getfrontWeightWhenRaised(int raiseAngle) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }

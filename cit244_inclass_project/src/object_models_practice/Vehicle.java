@@ -5,6 +5,8 @@
  */
 package object_models_practice;
 
+import inheritancepractice.CrashTestable;
+
 /**
  *
  * @author sliu11
