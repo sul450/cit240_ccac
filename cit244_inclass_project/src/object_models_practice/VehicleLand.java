@@ -26,24 +26,20 @@ public class VehicleLand {
         /* Determines the star rating. Should implement all methods from 
         crashtestable by using ct.getVehicleWeight();
         */
-        public double crash(CrashTestable){
-            
-            
-        }
 
-            @Override
+            
             public int getVehicleYear() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                return getVehicleYear();
             }
 
             @Override
             public DrivingMode getDrivingMode() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                return getDrivingMode();
             }
 
             @Override
             public double getVehicleWeight() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                return getVehicleWeight();
             }
 
             @Override
@@ -68,12 +64,12 @@ public class VehicleLand {
 
             @Override
             public double getFrontWeightLevelWeight() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                return getFrontWeightLevelWeight();
             }
 
             @Override
             public double getFrontWeightWhenRaised() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                return getFrontWeightWhenRaised();
             }
 
         };

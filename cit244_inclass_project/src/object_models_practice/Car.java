@@ -13,69 +13,66 @@ import inheritancepractice.DrivingMode;
  */
 public class Car extends Vehicle{
     
-    private String bodyStyle;
-    private int currentGear;
-    private double totalMiles;
-    private int numOfDoors;
-    
     public Car(int y, String mod, String m, String t, String bs){
         year = y;
         model = mod;
         make = m;
-        trim = t;
-        bodyStyle = bs;
-  
+        transmission = t;
     } 
 
+   
     @Override
     public void turn(int deg) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    //gets the vehicle year
     @Override
     public int getVehicleYear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 1991;
     }
 
-    @Override
-    public DrivingMode getDrivingMode() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //gets the vehicle driving mode
+    public Car(DrivingMode sport) {
     }
 
-    @Override
+    //gets teh vehicle weight
     public double getVehicleWeight() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 3010;
     }
 
-    @Override
+    //gets the height of the front bumper
     public double getFrontBumberHeight() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 46.1;
     }
 
-    @Override
+    //return what material the is made of
     public String frameMaterialIdentifer() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
+    //returns whether or not a airbag is present
     public boolean driverAirbagPresent() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return true;
     }
 
-    @Override
+    //returns the length of the wheelbase 
     public double getLengthOfWheelBase() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 99.6;
     }
 
-    @Override
+    //gets the weigth of teh front
     public double getFrontWeightLevelWeight() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
+    //returns the height of the front when he vehicle is raised
     public double getFrontWeightWhenRaised() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 
+    //returns the driving mode
+    public DrivingMode getDrivingMode() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

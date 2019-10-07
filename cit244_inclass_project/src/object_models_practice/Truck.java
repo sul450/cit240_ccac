@@ -13,6 +13,7 @@ import inheritancepractice.DrivingMode;
  */
 public class Truck extends Vehicle{
 
+    
     @Override
     public void turn(int deg) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

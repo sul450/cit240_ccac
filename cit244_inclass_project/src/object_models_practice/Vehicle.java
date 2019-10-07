@@ -13,6 +13,7 @@ import inheritancepractice.CrashTestable;
  */
 public abstract class Vehicle implements Turnable, CrashTestable{
     
+    //String variables
     String vin;
     String wheels;
     String licenseNumber;
@@ -21,15 +22,20 @@ public abstract class Vehicle implements Turnable, CrashTestable{
     String transmission;
     String trim;
     String fuelType;
+    
+    //Double variables
     double headingInDeg;
+    double price;
+    double strengthToWeightRatio;
+    
+    //Int Variables
     int speed;
     int maxSpeed;
     int year;
     int curbWeight;
     int peakForce;
     int turn;
-    double price;
-    double strengthToWeightRatio;
+    
     
     public Vehicle(){
         speed = 0;
