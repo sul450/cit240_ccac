@@ -83,7 +83,7 @@ public class SampleCode {
             throw new Exception("Shared secret differ");
         System.out.println("Shared secrets are the same");
         
-        /*
+         /*
          * Now let's create a SecretKey object using the shared secret
          * and use it for encryption. First, we generate SecretKeys for the
          * "AES" algorithm (based on the raw shared secret data) and
@@ -108,10 +108,10 @@ public class SampleCode {
         SecretKeySpec sallyAesKey = new SecretKeySpec(sallySharedSecret, 0, 16, "AES");
         
         /*
-         * John encrypts, using AES in CBC mode
+         * Bob encrypts, using AES in CBC mode
          */
         Cipher johnCipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
-        johnCipher.init(Cipher.ENCRYPT_MODE, johnAesKey);
+        johnCipher.init(Cipher..ENCRYPT_MODE, johnAesKey);
         byte [] cleartext = "This is just an example".getBytes();
         byte [] ciphertext = johnCipher.doFinal(cleartext);
         
@@ -156,6 +156,7 @@ public class SampleCode {
             char[] hexChars = {'0', '1', '2', '3', '4', '5', '6', '7', '8',
                                '9', 'A', 'B', 'C', 'D', 'E', 'F'};
             int high = ((b & 0xf0) >> 4);
+
             int low = (b & 0x0f);
             buf.append(hexChars[high]);
             buf.append(hexChars[low]);
@@ -174,5 +175,5 @@ public class SampleCode {
               }                
          }
         return buf.toString();
-    }     
+    }
 }
